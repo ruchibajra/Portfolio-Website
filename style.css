@@ -1,0 +1,142 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.navbar {
+  height: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  transition: 0.4s ease;
+
+}
+.navbar.scrolled {
+  background-color: white;
+  box-shadow: 0 2px 40px 0 rgba(0,0,0,.2);
+
+}
+
+.navbar-heros {
+  color: black;
+  width: 580px;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
+}
+
+.navbar-heros ul {
+  list-style-type: none;
+}
+
+.navbar-heros a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar a:hover {
+  color: #2fb297;
+}
+
+.navbar-socials {
+  width: 190px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* home section start */
+.home {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPDfdDR_KG2HTKXlgaK0If1LF85FM2i1AYGg&s);
+  background-size: cover;
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%;
+  display: flex;
+  min-height: 100vh;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.home img {
+  background-color: aqua;
+  border-radius: 100%;
+  border: 10px solid #2fb297;
+}
+
+.home-desc {
+  width: 30rem;
+}
+
+.self-intro {
+  font-size: 50px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.self-intro-desc {
+  margin-top: 30px;
+}
+
+button{
+    margin-top: 30px;
+    width: 7rem;
+    height: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    border-radius: 0.3rem;
+
+}
+#home-btn{
+  background-color: #2fb297;
+  color: white;
+  border: none;
+}
+
+mark {
+  background-color: white;
+  color: #2fb297;
+}
+/* home section end */
+
+/* about me page start */
+.about-me {
+  min-height: 550px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px 0px;
+  /* background-color: orange; */
+}
+
+#about-me-img{
+    height: 400px;
+    width: 400px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(./images/20240216_153026.jpg);
+    border-radius: 10px;
+    margin-left: 3%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.about-me-desc{
+    height: 70%;
+    width: 30%;
+    margin-right: 10%;
+
+
+}
+
+h2{
+    font-size: 2rem;
+    margin-bottom: .7rem;
+}
+#myskills-btn{
+    border: 1px solid #2fb297;
+    background-color: white;
+    color: #515c6a;
+}
+/* about me page end */

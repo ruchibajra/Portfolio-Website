@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ruchi Bajracharya</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR START -->
+    <div class="navbar">
+      <span><b>Ruchi Bajracharya</b></span>
+
+      <ul class="navbar-heros">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+
+      <div class="navbar-socials">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png"
+          style="height: 20px"
+          alt="facebook_icon"
+        />
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png"
+          style="height: 20px"
+          alt="Instagram_icon"
+        />
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png"
+          style="height: 20px"
+          alt="linkedin_icon"
+        />
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+          style="height: 20px; background-color: white; border-radius: 1px"
+          alt="github_icon"
+        />
+      </div>
+    </div>
+    <!-- NAVBAR END -->
+
+    <!-- HOME PAGE START -->
+    <div class="home">
+      <div class="home-image">
+        <img src="./images/ruchi profile prof.jpg" alt="ruchi_image" />
+      </div>
+
+      <div class="home-desc">
+        <p class="self-intro">
+          <strong> Hello my name is <ins>Ruchi Bajracharya.</ins></strong>
+        </p>
+
+        <p class="self-intro-desc">
+          a passionate and dedicated <b><mark> Web Developer </mark></b> with a
+          flair for creating innovative and user-friendly solutions. I
+          specialize in
+          <i
+            >front-end development, UI design, MERN full stack & Content
+            strategy.</i
+          >
+        </p>
+
+        <button id="home-btn">About Me</button>
+      </div>
+
+      <hr />
+    </div>
+    <!-- HOME PAGE END -->
+
+    <!-- ABOUT ME START -->
+    <div class="about-me">
+      <div id="about-me-img">
+
+      </div>
+
+      <div class="about-me-desc">
+
+        <h2>About Me</h2>
+
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptatibus odit unde rem aperiam aliquid esse excepturi eveniet vitae omnis. Tenetur, blanditiis. Tempore minima impedit dolorem veniam, minus alias quo.
+        Eius illum eveniet, neque architecto magnam veniam aliquam modi totam commodi praesentium tenetur? Alias consectetur vero fugiat dolorum corrupti enim rerum cum quo, qui voluptates perferendis minus, architecto ullam quidem.
+        Enim iste exercitationem omnis non, quasi unde veniam commodi vitae. Ipsum quam corporis laboriosam totam quas. Dignissimos deserunt necessitatibus  Vel quasi atque veritatis nam vero.</p>
+
+        <button id="myskills-btn">
+          Show My Skills
+        </button>
+      </div>
+    </div>
+    <!-- ABOUT ME END -->
+
+    <!-- PROJECT PAGE START -->
+    <!-- PROJECT PAGE END -->
+
+
+    <!-- ---------------------------------------------------------------------- -->
+
+    <!--narbar transition -->
+    <script>
+      window.addEventListener("scroll", function () {
+        var navbar = document.querySelector(".navbar");
+        if (window.scrollY > 0) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+    </script>
+  </body>
+</html>
