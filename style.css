@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
+
+/* NAVBAR SECTION START */
 .navbar {
   height: 5rem;
   display: flex;
@@ -16,6 +18,7 @@
   z-index: 1000;
   transition: 0.4s ease;
 }
+
 .navbar.scrolled {
   background-color: white;
   box-shadow: 0 2px 40px 0 rgba(0, 0, 0, 0.2);
@@ -33,9 +36,15 @@
   list-style-type: none;
 }
 
-.navbar-heros a {
+a {
   text-decoration: none;
   color: black;
+}
+
+#name-logo{
+  text-decoration: none;
+  color: black;
+
 }
 
 .navbar a:hover {
@@ -47,9 +56,11 @@
   display: flex;
   justify-content: space-evenly;
 }
+/* NAVBAR SECTION END */
 
-/* home section start */
-.home {
+
+/* HOME SECTION START */
+#home {
   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPDfdDR_KG2HTKXlgaK0If1LF85FM2i1AYGg&s);
   background-size: cover;
   border-bottom-left-radius: 50% 20%;
@@ -60,7 +71,7 @@
   align-items: center;
 }
 
-.home img {
+#home img {
   background-color: aqua;
   border-radius: 100%;
   border: 10px solid #2fb297;
@@ -70,12 +81,12 @@
   width: 30rem;
 }
 
-.self-intro {
+.home-intro {
   font-size: 50px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.self-intro-desc {
+.home-desc {
   margin-top: 30px;
 }
 
@@ -85,29 +96,32 @@ button {
   height: 2rem;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   border-radius: 0.3rem;
-}
-#home-btn {
+  background-color: #2fb297;
+  color: white;
   background-color: #2fb297;
   color: white;
   border: none;
+
 }
+
+
 
 mark {
   background-color: white;
   color: #2fb297;
 }
-/* home section end */
+/* HOME SECTION END */
 
-/* about me page start */
-.about-me {
+
+/* ABOUT ME SECTION START */
+#aboutme {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   padding: 90px 0px;
-  /* background-color: orange; */
 }
 
-#about-me-img {
+#aboutme-img {
   height: 400px;
   width: 400px;
   background-size: contain;
@@ -118,7 +132,7 @@ mark {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.about-me-desc {
+.aboutme-desc {
   height: 70%;
   width: 30%;
   margin-right: 10%;
@@ -128,70 +142,90 @@ h2 {
   font-size: 2rem;
   margin-bottom: 0.7rem;
 }
-#myskills-btn {
+
+#aboutme-btn {
   border: 1px solid #2fb297;
   background-color: white;
   color: #515c6a;
 }
-/* about me page end */
+/* ABOUT ME SECTION END */
 
-/* myproject Start */
-/* .myproject{
-    background-color: rgb(246, 247, 251);
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    padding: 60px 0px 90px 0px;
 
-}
-.project-title{
-    width: 800px;
-}
-
-.project-desc{
-    display: flex;
-    flex-direction: row;
-    background-color: red;
-
-}
-.project{
-    height: 400px;
-    width: 350px;
-    background-image: url(./images/20240216_153026.jpg);
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-
-}
-
-.project img{
-    height: 300px;
-    
-} */
-
-.project-section {
-  height: 600px;
+/* SKILLS SECTION START */
+#skills{
   background-color: rgb(246, 247, 251);
+  padding: 90px 0px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.skills-title{
+  /* display: flex;
+  align-items: center;
+  flex-direction: column; */
+  width: 600px;
   text-align: center;
+}
+.skills-box{
+  margin-top: 50px;
+  width: 400px;
+  justify-content: center;
+  display: flex;
+}
+
+
+#skills-logo {
+  height: 80px;
+  width: 80px;
+  font-size: 35px;
+  border: 2px solid #2fb297 ;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
   align-items: center;
   
 }
 
+#skills-info{
+  width: 250px;
+  display: flex;
+  flex-direction: column ;
+  margin-left: 25px;
+
+}
+
+.skills-list{
+  position: relative;
+  display: flex;
+  align-items: center; 
+  justify-content: space-evenly;
+}
+/* SKILLS SECTION END */
+
+
+/* PROJECT SECTION START */
+#project {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 90px 0px;
+}
+
 .project-title {
   width: 800px;
-  /* background-color: red; */
 }
 
 .project-container {
   height: 500px;
-  width: 100vw;
-  /* background-color: blue; */
+  width: 90vw;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  padding-top: 20px;
 }
 
 .project-box {
@@ -203,8 +237,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 1px 200px 0 rgba(0, 0, 0, 0.2);
-
+  box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
 .project-box img {
@@ -220,31 +253,37 @@ h2 {
   padding: 5px 5px 0px 5px;
   font-size: 13px;
 }
+/* PROJECT SECTION END */
 
-/* form start */
-.form-section{
+
+/* FORM SECTION START */
+.form-section {
   background-color: white;
 }
-.form-title{
+
+.form-title {
   padding: 90px 0px;
   display: flex;
   flex-direction: column;
   text-align: center;
 }
 
-.form-details{
+.form-details {
   padding-bottom: 90px;
   display: flex;
   justify-content: space-evenly;
 }
-.form-desc{
+
+.form-desc {
   display: flex;
   flex-direction: column;
 }
-input[type=text] {
+
+input[type="text"] {
   border: none;
   border: 2px solid black;
 }
+
 textarea {
   width: 100%;
   height: 100px;
@@ -255,4 +294,34 @@ textarea {
   background-color: #f8f8f8;
   font-size: 16px;
   resize: none;
+}
+/* FORM SECTION END */
+
+
+/* FOOTER SECTION START */
+.footer-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #35404e;
+  color: #ffffff;
+  height: 100px;
+}
+/* FOOTER SECTION END */
+
+/* LOGO */
+#skills-logo{
+color: #2fb297;
+}
+
+/* hireme start */
+.hireme{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 32px;
+  font-weight: 900;
+  background-color: rgb(246, 247, 251);
+  padding: 90px 0px;
 }

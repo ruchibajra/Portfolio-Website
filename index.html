@@ -4,58 +4,81 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ruchi Bajracharya</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- NAVBAR START -->
     <div class="navbar">
-      <span><b>Ruchi Bajracharya</b></span>
+      <a id="name-logo" href="#home">
+        <span><b>Ruchi Bajracharya</b></span>
+      </a>
 
       <ul class="navbar-heros">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#aboutme">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#project">Projects</a></li>
+        <li><a href="#form">Form</a></li>
       </ul>
 
       <div class="navbar-socials">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png"
-          style="height: 20px"
-          alt="facebook_icon"
-        />
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png"
-          style="height: 20px"
-          alt="Instagram_icon"
-        />
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png"
-          style="height: 20px"
-          alt="linkedin_icon"
-        />
-        <img
-          src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
-          style="height: 20px; background-color: white; border-radius: 1px"
-          alt="github_icon"
-        />
+        <a
+          href="https://www.facebook.com/profile.php?id=100008392064480"
+          target="_blank"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png"
+            style="height: 20px"
+            alt="facebook_icon"
+        /></a>
+
+        <a href="https://www.instagram.com/ruuuchi.b/" target="_blank">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png"
+            style="height: 20px"
+            alt="Instagram_icon"
+        /></a>
+
+        <a
+          href="https://www.linkedin.com/in/ruchi-bajracharya-690bb2264/"
+          target="_blank"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png"
+            style="height: 20px"
+            alt="linkedin_icon"
+          />
+        </a>
+
+        <a href="https://github.com/ruchibajra" target="_blank"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+            style="height: 20px; background-color: white; border-radius: 1px"
+            alt="github_icon"
+        /></a>
       </div>
     </div>
     <!-- NAVBAR END -->
 
     <!-- HOME PAGE START -->
-    <div class="home">
+    <section id="home">
       <div class="home-image">
         <img src="./images/ruchi profile prof.jpg" alt="ruchi_image" />
       </div>
 
       <div class="home-desc">
-        <p class="self-intro">
+        <p class="home-intro">
           <strong> Hello my name is <ins>Ruchi Bajracharya.</ins></strong>
         </p>
 
-        <p class="self-intro-desc">
+        <p class="home-desc">
           a passionate and dedicated <b><mark> Web Developer </mark></b> with a
           flair for creating innovative and user-friendly solutions. I
           specialize in
@@ -65,18 +88,19 @@
           >
         </p>
 
-        <button id="home-btn">About Me</button>
+        <button class="home-btn1 ">About Me</button>
+        <button class="home-btn2 ">Download CV</button>
       </div>
 
       <hr />
-    </div>
+    </section>
     <!-- HOME PAGE END -->
 
     <!-- ABOUT ME START -->
-    <div class="about-me">
-      <div id="about-me-img"></div>
+    <section id="aboutme">
+      <div id="aboutme-img"></div>
 
-      <div class="about-me-desc">
+      <div class="aboutme-desc">
         <h2>About Me</h2>
 
         <p>
@@ -92,16 +116,133 @@
           Vel quasi atque veritatis nam vero.
         </p>
 
-        <button id="myskills-btn">Show My Skills</button>
+        <button id="aboutme-btn">Show My Skills</button>
       </div>
-    </div>
+    </section>
     <!-- ABOUT ME END -->
 
-    <!-- PROJECT PAGE START -->
+    <!-- My Skills -->
+    <section id="skills">
+      <div class="skills-title">
+        <h2>My Skills</h2>
+        <span
+          >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab odit
+          maiores minus asperiores eius. Sequi expedita asperiores, nihil
+          explicabo eum non!</span
+        >
+      </div>
 
-    <div class="project-section">
+      <div class="skills-list">
+        <div class="skills-box">
+          <div id="skills-logo">
+            <i class="fa-solid fa-laptop"></i>
+          </div>
+
+          <div id="skills-info">
+            <h3>Website Design</h3>
+            <br />
+            <span
+              >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil
+              eum asperiores aut tempora fugit, fuga deserunt voluptates tenetur
+              natus aliquid repellendus consequatur corrupti illum itaque, harum
+              sit quasi officiis dolorum.</span
+            >
+          </div>
+        </div>
+
+        <div class="skills-box">
+          <div id="skills-logo">
+            <i class="fa-solid fa-laptop"></i>
+          </div>
+
+          <div id="skills-info">
+            <h3>Website Design</h3>
+            <br />
+            <span
+              >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil
+              eum asperiores aut tempora fugit, fuga deserunt voluptates tenetur
+              natus aliquid repellendus consequatur corrupti illum itaque, harum
+              sit quasi officiis dolorum.</span
+            >
+          </div>
+        </div>
+
+        <div class="skills-box">
+          <div id="skills-logo">
+            <i class="fa-solid fa-laptop"></i>
+          </div>
+
+          <div id="skills-info">
+            <h3>Website Design</h3>
+            <br />
+            <span
+              >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil
+              eum asperiores aut tempora fugit, fuga deserunt voluptates tenetur
+              natus aliquid repellendus consequatur corrupti illum itaque, harum
+              sit quasi officiis dolorum.</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-list">
+        <div class="skills-box">
+          <div id="skills-logo">
+            <i class="fa-solid fa-laptop"></i>
+          </div>
+
+          <div id="skills-info">
+            <h3>Website Design</h3>
+            <br />
+            <span
+              >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil
+              eum asperiores aut tempora fugit, fuga deserunt voluptates tenetur
+              natus aliquid repellendus consequatur corrupti illum itaque, harum
+              sit quasi officiis dolorum.</span
+            >
+          </div>
+        </div>
+
+        <div class="skills-box">
+          <div id="skills-logo">
+            <i class="fa-solid fa-laptop"></i>
+          </div>
+
+          <div id="skills-info">
+            <h3>Website Design</h3>
+            <br />
+            <span
+              >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil
+              eum asperiores aut tempora fugit, fuga deserunt voluptates tenetur
+              natus aliquid repellendus consequatur corrupti illum itaque, harum
+              sit quasi officiis dolorum.</span
+            >
+          </div>
+        </div>
+
+        <div class="skills-box">
+          <div id="skills-logo">
+            <i class="fa-solid fa-laptop"></i>
+          </div>
+
+          <div id="skills-info">
+            <h3>Website Design</h3>
+            <br />
+            <span
+              >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil
+              eum asperiores aut tempora fugit, fuga deserunt voluptates tenetur
+              natus aliquid repellendus consequatur corrupti illum itaque, harum
+              sit quasi officiis dolorum.</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECT PAGE START -->
+    <section id="project">
       <div class="project-title">
-        <h2>My projects</h2>
+        <h2>Interests</h2>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, quos
           quae dolores ex soluta minus sit tenetur temporibus nobis
@@ -144,7 +285,10 @@
         </div>
 
         <div class="project-box">
-          <img src="https://bouve.northeastern.edu/wp-content/uploads/2024/01/skincare-ngn-1024x671.png" alt="" />
+          <img
+            src="https://bouve.northeastern.edu/wp-content/uploads/2024/01/skincare-ngn-1024x671.png"
+            alt=""
+          />
           <div class="project-desc">
             <h3>Skincare Ecommerce</h3>
             <p>
@@ -156,16 +300,25 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- PROJECT PAGE END -->
 
+    <!-- HIRE ME NOW START -->
+     <div class="hireme">
+
+      I am Available For Freelancer 
+
+      <button>Hire Me Now</button>
+     </div>
+    <!-- HIRE ME NOW END -->
+
     <!-- FORM PAGE START -->
-    <div class="form-section">
+    <section id="form">
       <div class="form-title">
         <h2>Contact Me</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolor
-          nam accusantium blanditiis harum? 
+          nam accusantium blanditiis harum?
         </p>
       </div>
 
@@ -186,10 +339,51 @@
           <textarea name="" id=""></textarea>
         </div>
       </div>
-    </div>
+    </section>
     <!-- FORM PAGE END -->
 
     <!-- ---------------------------------------------------------------------- -->
+
+    <div class="footer-section">
+      <div class="footer-copyright">© Copyright 2024 - Ruchi Bajracharya</div>
+
+      <div class="navbar-socials">
+        <a
+          href="https://www.facebook.com/profile.php?id=100008392064480"
+          target="_blank"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png"
+            style="height: 20px"
+            alt="facebook_icon"
+        /></a>
+
+        <a href="https://www.instagram.com/ruuuchi.b/" target="_blank">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png"
+            style="height: 20px"
+            alt="Instagram_icon"
+        /></a>
+
+        <a
+          href="https://www.linkedin.com/in/ruchi-bajracharya-690bb2264/"
+          target="_blank"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png"
+            style="height: 20px"
+            alt="linkedin_icon"
+          />
+        </a>
+
+        <a href="https://github.com/ruchibajra" target="_blank"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+            style="height: 20px; background-color: white; border-radius: 1px"
+            alt="github_icon"
+        /></a>
+      </div>
+    </div>
 
     <!--narbar transition -->
     <script>
